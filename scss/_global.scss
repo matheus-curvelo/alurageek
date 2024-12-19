@@ -1,0 +1,27 @@
+@import './variables';
+@import './typography';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $light;
+    color: $light;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1;
+}
