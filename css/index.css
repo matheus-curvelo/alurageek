@@ -223,15 +223,23 @@ main {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (max-width: 991.98px) {
+  main .row {
+    flex-direction: column-reverse;
+  }
+}
+main .title {
+  text-align: center;
+  text-transform: uppercase;
+}
+main .products-area,
+main .forms-area {
+  padding: 40px;
+}
 main .forms-area {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 40px;
-}
-main .forms-area .title {
-  text-align: center;
-  text-transform: uppercase;
 }
 main .forms-area input {
   border-radius: 30px;
@@ -250,6 +258,11 @@ main .forms-area .buttons-area {
   justify-content: space-between;
   gap: 12px;
 }
+@media (max-width: 575.98px) {
+  main .forms-area .buttons-area {
+    flex-direction: column;
+  }
+}
 main .forms-area .buttons-area .btn {
   border-radius: 15px;
   font-size: 16px;
@@ -265,13 +278,69 @@ main .forms-area .buttons-area .btn.btn-save:hover {
   background-color: #5d04d9;
   color: #ffffff;
 }
-main .forms-area .buttons-area .btn.btn-erase {
+main .forms-area .buttons-area .btn.btn-clean {
   background-color: #ffffff;
   border: 3px solid #03318c;
   color: #03318c;
 }
-main .forms-area .buttons-area .btn.btn-erase:hover {
+main .forms-area .buttons-area .btn.btn-clean:hover {
   background-color: #5d04d9;
   border-color: #5d04d9;
   color: #ffffff;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 48px;
+  margin-top: 36px;
+}
+@media (max-width: 1199.98px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575.98px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.card-container .card {
+  border: 3px solid #000000;
+  background-color: #5d04d9;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.card-container .card .card-img {
+  width: 100%;
+  border-radius: 5px;
+  border: 3px solid #000000;
+}
+.card-container .card .card-title {
+  font-size: 15px;
+  margin: 0;
+  color: #ffffff;
+}
+.card-container .card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-container .card .card-bottom .card-price {
+  font-size: 14px;
+  color: #ffffff;
+}
+.card-container .card .card-bottom .btn-erase {
+  background: none;
+  border: none;
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+}
+.card-container .card .card-bottom .btn-erase:hover {
+  opacity: 0.75;
 }/*# sourceMappingURL=index.css.map */

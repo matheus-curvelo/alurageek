@@ -4,16 +4,27 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 
+    .row {
+        @media (max-width: $mdMax) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .products-area,
+    .forms-area {
+        padding: 40px;
+    }
+
+
     .forms-area {
         display: flex;
         flex-direction: column;
         gap: 24px;
-        padding: 40px;
-
-        .title {
-            text-align: center;
-            text-transform: uppercase;
-        }
 
         input {
             border-radius: 30px;
@@ -30,6 +41,10 @@ main {
             display: flex;
             justify-content: space-between;
             gap: 12px;
+
+            @media (max-width: $xsMax) {
+                flex-direction: column;
+            }
 
             .btn {
                 border-radius: 15px;
@@ -48,7 +63,7 @@ main {
                     }
                 }
 
-                &.btn-erase {
+                &.btn-clean {
                     background-color: $light;
                     border: 3px solid $blue;
                     color: $blue;
