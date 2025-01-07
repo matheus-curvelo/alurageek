@@ -349,4 +349,7 @@ main .forms-area .buttons-area .btn.btn-clean:hover {
 }
 .card-container .card .card-bottom .btn-erase:hover {
   opacity: 0.75;
+}
+.card-container .empty-message {
+  white-space: nowrap;
 }/*# sourceMappingURL=index.css.map */
