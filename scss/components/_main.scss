@@ -20,6 +20,12 @@ main {
         padding: 40px;
     }
 
+    .products-area {
+        @media (min-width: $mdMax) {
+            max-height: 75vh;
+            overflow-y: auto;
+        }
+    }
 
     .forms-area {
         display: flex;

@@ -236,6 +236,12 @@ main .products-area,
 main .forms-area {
   padding: 40px;
 }
+@media (min-width: 991.98px) {
+  main .products-area {
+    max-height: 75vh;
+    overflow-y: auto;
+  }
+}
 main .forms-area {
   display: flex;
   flex-direction: column;
