@@ -224,6 +224,14 @@ main {
   padding-bottom: 60px;
 }
 @media (max-width: 991.98px) {
+  main {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 991.98px) {
   main .row {
     flex-direction: column-reverse;
   }
@@ -234,7 +242,13 @@ main .title {
 }
 main .products-area,
 main .forms-area {
-  padding: 40px;
+  padding: 32px;
+}
+@media (max-width: 991.98px) {
+  main .products-area,
+  main .forms-area {
+    padding: 16px;
+  }
 }
 @media (min-width: 991.98px) {
   main .products-area {
@@ -350,6 +364,8 @@ main .forms-area .buttons-area .btn.btn-clean:hover {
 .card-container .card .card-bottom .btn-erase:hover {
   opacity: 0.75;
 }
-.card-container .empty-message {
-  white-space: nowrap;
+@media (min-width: 575.98px) {
+  .card-container .empty-message {
+    white-space: nowrap;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -59,6 +59,8 @@
     }
 
     .empty-message {
-        white-space: nowrap;
+        @media (min-width: $xsMax) {
+            white-space: nowrap;
+        }
     }
 }

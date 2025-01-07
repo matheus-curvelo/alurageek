@@ -4,6 +4,13 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media (max-width: $mdMax) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .row {
         @media (max-width: $mdMax) {
             flex-direction: column-reverse;
@@ -17,7 +24,11 @@ main {
 
     .products-area,
     .forms-area {
-        padding: 40px;
+        padding: 32px;
+
+        @media (max-width: $mdMax) {
+            padding: 16px;
+        }
     }
 
     .products-area {
