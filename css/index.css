@@ -1,5 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
 }
 
@@ -81,7 +83,9 @@ p {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
 }
 
@@ -176,7 +180,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  color: #ffffff;
 }
 
 header, footer {
@@ -201,8 +204,9 @@ main {
 
 .footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 64px 0;
   background-color: #03318c;
+  color: #ffffff;
 }
 .footer img {
   max-width: 100%;
@@ -211,4 +215,63 @@ main {
 .footer p {
   margin: 10px 0;
   font-size: 0.9em;
+}
+
+main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+main .forms-area {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+}
+main .forms-area .title {
+  text-align: center;
+  text-transform: uppercase;
+}
+main .forms-area input {
+  border-radius: 30px;
+  padding: 16px;
+  color: #03318c;
+  border: 3px solid #03318c;
+}
+main .forms-area input::-moz-placeholder {
+  color: #03318c;
+}
+main .forms-area input::placeholder {
+  color: #03318c;
+}
+main .forms-area .buttons-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+main .forms-area .buttons-area .btn {
+  border-radius: 15px;
+  font-size: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+main .forms-area .buttons-area .btn.btn-save {
+  background-color: #03318c;
+  color: #ffffff;
+}
+main .forms-area .buttons-area .btn.btn-save:hover {
+  background-color: #5d04d9;
+  color: #ffffff;
+}
+main .forms-area .buttons-area .btn.btn-erase {
+  background-color: #ffffff;
+  border: 3px solid #03318c;
+  color: #03318c;
+}
+main .forms-area .buttons-area .btn.btn-erase:hover {
+  background-color: #5d04d9;
+  border-color: #5d04d9;
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */
